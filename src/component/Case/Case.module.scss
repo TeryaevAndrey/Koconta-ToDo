@@ -1,0 +1,16 @@
+.case {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 47px;
+  padding: 14px 25px;
+  background-color: #EFEFEF;
+  border-radius: 20px;
+
+  img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+}
