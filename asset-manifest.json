@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/koconta-todo/static/css/main.af10beab.css",
+    "main.js": "/koconta-todo/static/js/main.c1b46acf.js",
+    "static/js/787.602f8cc2.chunk.js": "/koconta-todo/static/js/787.602f8cc2.chunk.js",
+    "index.html": "/koconta-todo/index.html",
+    "main.af10beab.css.map": "/koconta-todo/static/css/main.af10beab.css.map",
+    "main.c1b46acf.js.map": "/koconta-todo/static/js/main.c1b46acf.js.map",
+    "787.602f8cc2.chunk.js.map": "/koconta-todo/static/js/787.602f8cc2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af10beab.css",
+    "static/js/main.c1b46acf.js"
+  ]
+}
