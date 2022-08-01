@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
 import Case from './component/Case/Case';
+import logo from './img/logo.svg';
 
 function App() {
    const [text, setText] = React.useState('');
@@ -29,7 +30,7 @@ function App() {
       <div className="App">
          <header className="header">
             <a className="logo" href="#">
-               <img className="logoImg" src="img/logo.svg" alt="logo"/>
+               <img className="logoImg" src={logo} alt="logo"/>
             </a>
          </header>
          <div className="content">

@@ -1,13 +1,14 @@
 import React from 'react';
-import styles from "./Case.module.scss";
+import styles from './Case.module.scss';
+import deleteImg from '../../img/delete.svg';
 
 const Case = (props) => {
-   return(
+   return (
       <div className={styles.case}>
          <span>
             {props.text}
          </span>
-         <img onClick={props.remove} src="img/delete.svg" alt="delete"/>
+         <img onClick={props.remove} src={deleteImg} alt="delete"/>
       </div>
    );
 }
