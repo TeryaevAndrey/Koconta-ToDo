@@ -47,6 +47,7 @@ function App() {
                }
             </div>
          </div>
+         <p className="version">v1.0</p>
       </div>
    );
 }
