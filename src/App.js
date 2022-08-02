@@ -6,7 +6,7 @@ import logo from './img/logo.svg';
 function App() {
    const [text, setText] = React.useState('');
    const [items, setItems] = React.useState(
-      JSON.parse(localStorage.getItem('items')) || '[]'
+      JSON.parse(localStorage.getItem('items')) || []
    );
 
    const onChangeTextInput = (event) => {
