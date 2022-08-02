@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/koconta-todo/static/css/main.af10beab.css",
-    "main.js": "/koconta-todo/static/js/main.69e84ee8.js",
+    "main.css": "/koconta-todo/static/css/main.bbae60d2.css",
+    "main.js": "/koconta-todo/static/js/main.dda9530f.js",
     "static/js/787.602f8cc2.chunk.js": "/koconta-todo/static/js/787.602f8cc2.chunk.js",
     "static/media/logo.svg": "/koconta-todo/static/media/logo.3c7cd08c4e26cec6a3e327779a69e23f.svg",
     "static/media/delete.svg": "/koconta-todo/static/media/delete.7ed1c23236f0ea4f02a3a03f28971013.svg",
     "index.html": "/koconta-todo/index.html",
-    "main.af10beab.css.map": "/koconta-todo/static/css/main.af10beab.css.map",
-    "main.69e84ee8.js.map": "/koconta-todo/static/js/main.69e84ee8.js.map",
+    "main.bbae60d2.css.map": "/koconta-todo/static/css/main.bbae60d2.css.map",
+    "main.dda9530f.js.map": "/koconta-todo/static/js/main.dda9530f.js.map",
     "787.602f8cc2.chunk.js.map": "/koconta-todo/static/js/787.602f8cc2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af10beab.css",
-    "static/js/main.69e84ee8.js"
+    "static/css/main.bbae60d2.css",
+    "static/js/main.dda9530f.js"
   ]
 }
