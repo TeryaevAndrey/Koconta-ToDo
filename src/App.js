@@ -15,7 +15,8 @@ function App() {
 
    const addItem = (event) => {
       event.preventDefault();
-      text.length && setItems([...items, {text}]);
+      text.length && setItems([...items, {text, done: false}]);
+      setText('');
    };
 
    React.useEffect(() => {
@@ -42,7 +43,7 @@ function App() {
             <div className="contentList">
                {
                   items.map((item, index) => (
-                     <Case key={index} text={item.text} remove={() => removeItem(index)}/>
+                     <Case key={index} text={item.text} remove={() => removeItem(index)} done={item.done} id={index} items={items}/>
                   ))
                }
             </div>
