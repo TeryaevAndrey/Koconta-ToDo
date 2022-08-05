@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useId } from 'react';
+import uuid from 'react-uuid'
+
 import './App.scss';
 import Case from './component/Case/Case';
 import logo from './img/logo.svg';
@@ -8,6 +10,7 @@ function App() {
    const [items, setItems] = React.useState(
       JSON.parse(localStorage.getItem('items')) || []
    );
+   const id = useId();
 
    const onChangeTextInput = (event) => {
       setText(event.target.value);
@@ -15,7 +18,7 @@ function App() {
 
    const addItem = (event) => {
       event.preventDefault();
-      text.length && setItems([...items, {text, done: false}]);
+      text.length && setItems([...items, {id: uuid(), text, done: false}]);
       setText('');
    };
 
@@ -24,7 +27,7 @@ function App() {
    }, [items]);
 
    const removeItem = (id) => {
-      setItems(prev => prev.filter((el, index) => index !== id));
+      setItems(prev => prev.filter((item) => item.id !== id));
    };
 
    return (
@@ -42,8 +45,8 @@ function App() {
             </form>
             <div className="contentList">
                {
-                  items.map((item, index) => (
-                     <Case key={index} text={item.text} remove={() => removeItem(index)} done={item.done} id={index} items={items}/>
+                  items.map((item) => (
+                     <Case key={item.id} text={item.text} remove={() => removeItem(item.id)} done={item.done} id={item.id} items={items}/>
                   ))
                }
             </div>
